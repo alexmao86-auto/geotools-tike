@@ -1,4 +1,4 @@
-.. |gtVersion| replace:: 2.6-M2
+.. |gtVersion| replace:: 2.6.4
 .. _quickstart:
 
 Quickstart
@@ -134,7 +134,7 @@ To make use of GeoTools we are going to add two things to your pom.xml file:
       <name>example</name>
       <url>http://maven.apache.org</url>
       <properties>
-        <geotools.version>2.6-SNAPSHOT</geotools.version>
+        <geotools.version>2.6.4</geotools.version>
       </properties>
       <dependencies>
         <dependency>
@@ -261,7 +261,7 @@ Running your application from the command line is a bit more cumbersome, requiri
  [INFO] Preparing exec:java
  [INFO] No goals needed for project - skipping
  [INFO] [exec:java]
- Hello GeoTools:2.6.SNAPSHOT
+ Hello GeoTools:2.6.4
  [INFO] ------------------------------------------------------------------------
  [INFO] BUILD SUCCESSFUL
  [INFO] ------------------------------------------------------------------------
@@ -370,20 +370,20 @@ To see this in action you can ask Maven to print out a tree of the dependencies 
  [INFO] [dependency:tree]
  [INFO] org.geotools.demo.example:example:jar:1.0-SNAPSHOT
  [INFO] +- junit:junit:jar:3.8.1:test
- [INFO] +- org.geotools:gt-main:jar:2.6-M2:compile
- [INFO] |  +- org.geotools:gt-api:jar:2.6-M2:compile
+ [INFO] +- org.geotools:gt-main:jar:2.6.4:compile
+ [INFO] |  +- org.geotools:gt-api:jar:2.6.4:compile
  [INFO] |  +- com.vividsolutions:jts:jar:1.9:compile
  [INFO] |  +- jdom:jdom:jar:1.0:compile
  [INFO] |  \- commons-beanutils:commons-beanutils:jar:1.7.0:compile
  [INFO] |     \- commons-logging:commons-logging:jar:1.0.3:compile
- [INFO] +- org.geotools:gt-shapefile:jar:2.6-M2:compile
- [INFO] |  \- org.geotools:gt-referencing:jar:2.6-M2:compile
+ [INFO] +- org.geotools:gt-shapefile:jar:2.6.4:compile
+ [INFO] |  \- org.geotools:gt-referencing:jar:2.6.4:compile
  [INFO] |     +- java3d:vecmath:jar:1.3.1:compile
  [INFO] |     +- commons-pool:commons-pool:jar:1.3:compile
- [INFO] |     \- org.geotools:gt-metadata:jar:2.6-M2:compile
+ [INFO] |     \- org.geotools:gt-metadata:jar:2.6.4:compile
  [INFO] |        +- org.opengis:geoapi:jar:2.2-SNAPSHOT:compile
  [INFO] |        \- net.java.dev.jsr-275:jsr-275:jar:1.0-beta-2:compile
- [INFO] \- org.geotools:gt-epsg-hsql:jar:2.6-M2:compile
+ [INFO] \- org.geotools:gt-epsg-hsql:jar:2.6.4:compile
  [INFO]    \- hsqldb:hsqldb:jar:1.8.0.7:compile
  [INFO] ------------------------------------------------------------------------
  [INFO] BUILD SUCCESSFUL
@@ -440,6 +440,10 @@ A snapshot release is a nightly release made by the geotools team; to make use o
       <name>OpenGeo Maven Repository</name>
       <url>http://repo.opengeo.org</url>
     </repository>
+    ...
+    <properties>
+      <geotools.version>2.6-SNAPSHOT</geotools.version>
+    </properties>
 
 You can now refer to 2.6-SNAPSHOT
 
