@@ -136,7 +136,7 @@ public final class ImageMosaicFormat extends AbstractGridFormat implements Forma
     
     /** Control the footprint management.*/
     public static final ParameterDescriptor<Boolean> HANDLE_FOOTPRINT = new DefaultParameterDescriptor<Boolean>(
-            "HandleFootprint", Boolean.class, new Boolean[]{Boolean.TRUE,Boolean.FALSE}, Boolean.TRUE);
+            "HandleFootprint", Boolean.class, new Boolean[]{Boolean.TRUE,Boolean.FALSE}, Boolean.FALSE);
     
     /** Control the background values for the output coverage */
     public static final ParameterDescriptor<double[]> BACKGROUND_VALUES = new DefaultParameterDescriptor<double[]>(
