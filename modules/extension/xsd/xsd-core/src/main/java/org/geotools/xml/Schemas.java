@@ -1412,7 +1412,7 @@ public class Schemas {
         List /*<XSDSchemaLocator>*/ locators;
 
         public SchemaLocatorAdapter(List /*<XSDSchemaLocator>*/ locators) {
-            this.locators = locators;
+            this.locators = new ArrayList(locators);
         }
 
         public boolean isAdapterForType(Object type) {
@@ -1460,7 +1460,7 @@ public class Schemas {
         List /*<XSDSchemaLocationResolver>*/ resolvers;
 
         public SchemaLocationResolverAdapter(List /*<XSDSchemaLocationResolver>*/ resolvers) {
-            this.resolvers = resolvers;
+            this.resolvers = new ArrayList(resolvers);
         }
 
         public boolean isAdapterForType(Object type) {
